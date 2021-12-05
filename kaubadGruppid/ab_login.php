@@ -1,14 +1,3 @@
-<link rel="stylesheet" href="styles.css">
-<div class="login_container">
-    <div class="screen">
-        <div class="screen_content">
-            <h1 class="form_header">Login vorm</h1>
-            <form class="login" action="" method="post">
-                <label class="login_label">Kasutaja nimi:</label>
-                <input class="login_input" type="text" name="login" placeholder="nimi">
-                <label class="login_label">Salasõna:</label>
-                <input class="login_input" type="password" name="pass">
-                <br>
 <?php
 require("conf.php");
 global $connection;
@@ -47,7 +36,16 @@ if (!empty($_POST['login']) && !empty($_POST['pass'])) {
     }
 }
 ?>
-                <br>
+<link rel="stylesheet" href="styles.css">
+<div class="login_container">
+    <div class="screen">
+        <div class="screen_content">
+            <h1 class="form_header">Login vorm</h1>
+            <form class="login" action="" method="post">
+                <label class="login_label">Kasutaja nimi:</label>
+                <input class="login_input" type="text" name="login" placeholder="nimi">
+                <label class="login_label">Salasõna:</label>
+                <input class="login_input" type="password" name="pass">
                 <input class="login_submit" type="submit" value="Logi sisse">
             </form>
         </div>
